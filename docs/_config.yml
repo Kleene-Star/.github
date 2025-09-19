@@ -1,0 +1,21 @@
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+
+plugins:
+  - jekyll-include-cache
+
+title: KleeneStar
+description: Modular knowledge platform
+url: "https://kleene-star.github.io"
+baseurl: "/kleenestar-project-website"
+
+minimal_mistakes_skin: "default" # options: "dark", "air", "neon", etc.
+
+author:
+  name: "Rene Schwarzer"
+  email: "rene_schwarzer@hotmail.de"
+
+# Optional: enable sidebar navigation via collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/

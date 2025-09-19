@@ -1,0 +1,12 @@
+main:
+  - title: "Home"
+    url: "/"
+  - title: "Concept"
+    url: "/concept/"
+    children:
+      - title: "Requirements"
+        url: "/concept/requirement/"
+      - title: "CDM Model"
+        url: "/concept/cdm/"
+  - title: "Legal Notice"
+    url: "/legal-notice/"
