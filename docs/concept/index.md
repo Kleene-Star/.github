@@ -12,7 +12,7 @@ This section outlines the architectural foundations and design principles behind
 
 ## Overview
 
-**KleeneStar** is built on the `WebExpress` framework, which emphasizes plugin-based modularity, event-driven communication, and clean separation of concerns. The conceptual layer defines how core ideas translate into technical structures and user-facing functionality.
+**KleeneStar** is built on the [WebExpress-Framework](https://github.com/webexpress-framework), which emphasizes plugin-based modularity, event-driven communication, and clean separation of concerns. The conceptual layer defines how core ideas translate into technical structures and user-facing functionality.
 
 ## Included Topics
 

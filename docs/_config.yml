@@ -6,13 +6,13 @@ plugins:
 title: KleeneStar
 description: Modular knowledge platform
 url: "https://kleene-star.github.io"
-baseurl: "/kleenestar-project-website"
+baseurl: ""
 
-minimal_mistakes_skin: "default" # options: "dark", "air", "neon", etc.
+minimal_mistakes_skin: "dark" # options: "default", "air", "neon", etc.
 
 author:
   name: "Rene Schwarzer"
-  email: "rene_schwarzer@hotmail.de"
+  email: "kleenestar.project@gmail.com"
 
 # Optional: enable sidebar navigation via collections
 collections:

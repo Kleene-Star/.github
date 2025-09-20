@@ -47,14 +47,14 @@ The following diagram shows the most important components and their relationship
 ```
 
 Explanation of relationships:
-- Workspace → EntityType: A workspace can contain multiple entity types (1:n).
-- EntityType → AttributeType: Each entity type can reference multiple attribute types (1:n).
-- EntityInstance → EntityType: Each instance is based on exactly one type (n:1).
-- EntityInstance → Workspace: Each instance belongs to a workspace (n:1).
-- EntityInstance → AttributeValue: An instance can have multiple attribute values (1:n).
-- AttributeValue → AttributeType: Each value is based on a definition (n:1).
-- EntityInstance → Link: Entities can be connected via links (2:n).
-- EntityInstance → Comment / Version / FileReference: Additional metadata and content (1:n).
+- **Workspace → EntityType:** A workspace can contain multiple entity types (1:n).
+- **EntityType → AttributeType:** Each entity type can reference multiple attribute types (1:n).
+- **EntityInstance → EntityType:** Each instance is based on exactly one type (n:1).
+- **EntityInstance → Workspace:** Each instance belongs to a workspace (n:1).
+- **EntityInstance → AttributeValue:** An instance can have multiple attribute values (1:n).
+- **AttributeValue → AttributeType:** Each value is based on a definition (n:1).
+- **EntityInstance → Link:** Entities can be connected via links (2:n).
+- **EntityInstance → Comment / Version / FileReference:** Additional metadata and content (1:n).
 
 ### Workspace - The contextual frame
 
@@ -80,8 +80,8 @@ In the **Kleenestar** data model, the entity serves as the central concept for s
 
 Entities exist in two clearly separated forms:
 
-- EntityType: the formal definition of a type, comparable to a class in object-oriented systems. It specifies which fields exist, which data types are used, and whether the type can be instantiated.
-- EntityInstance: the concrete manifestation of an entity type with actual content and values. It represents an individual object in the system, e.g., an article, a task, or an asset.
+- **EntityType:** the formal definition of a type, comparable to a class in object-oriented systems. It specifies which fields exist, which data types are used, and whether the type can be instantiated.
+- **EntityInstance:** the concrete manifestation of an entity type with actual content and values. It represents an individual object in the system, e.g., an article, a task, or an asset.
 
 Advantages of this separation:
 
@@ -264,7 +264,7 @@ These mechanisms ensure data protection, role-based collaboration, and controlle
 
 ## Configuration
 
-To enable consistent and automatable system configuration, **Kleenestar** relies on a declarative configuration strategy outside the database. All relevant settings-e.g., UI overrides, type registrations, workspace templates, or authorization rules-can be stored as structured parameter files in JSON or YAML format directly on the server.
+To enable consistent and automatable system configuration, **Kleenestar** relies on a declarative configuration strategy outside the database. All relevant settings-e.g., UI overrides, type registrations, workspace templates, or authorization rules, can be stored as structured parameter files in JSON or YAML format directly on the server.
 
 Advantages of this architecture:
 
@@ -273,7 +273,7 @@ Advantages of this architecture:
 - Transparency and portability: The configuration is readable, editable, and portable-ideal for containerized deployments or multi-tenant environments.
 - Separation of data and control: The platform deliberately separates persisted user data (in the DB) from system-controlling parameters (in the file system), which increases maintainability and security.
 
-This configuration strategy makes **Kleenestar** particularly suitable for complex, scalable, and automatically managed platform landscapes-without sacrificing flexibility or adaptability.
+This configuration strategy makes **Kleenestar** particularly suitable for complex, scalable, and automatically managed platform landscapes, without sacrificing flexibility or adaptability.
 
 ## Extensibility and type registration
 

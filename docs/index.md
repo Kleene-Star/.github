@@ -6,11 +6,11 @@ author_profile: false
 ---
 
 ---
-# KleeneStar Platform
+## KleeneStar Platform
 
-Modular architecture for knowledge, process, and asset management – built with WebExpress
+Modular architecture for knowledge, process, and asset management – built with **KleeneStar**.
 
-**KleeneStar** is an integrated, web-based platform for structured management of knowledge, tasks, and digital assets. Built on the `WebExpress` framework, it offers a highly extensible architecture for organizations that value data sovereignty, operational efficiency, and technical clarity. Its goal is to replace fragmented system landscapes with a unified, modular solution and to sustainably improve digital collaboration.
+**KleeneStar** is an integrated, web-based platform for structured management of knowledge, tasks, and digital assets. Built on the [WebExpress framework](https://github.com/webexpress-framework), it offers a highly extensible architecture for organizations that value data sovereignty, operational efficiency, and technical clarity. Its goal is to replace fragmented system landscapes with a unified, modular solution and to sustainably improve digital collaboration.
 
 ## Objectives
 
@@ -34,12 +34,12 @@ Modular architecture for knowledge, process, and asset management – built with
 
 ## Core Modules
 
-The platform is composed of several core modules, each implemented as standalone plugins within the WebExpress ecosystem. Every module serves a clearly defined purpose and is deeply integrated into the overall architecture:
+The platform is composed of several core modules, each implemented as standalone plugins within the [WebExpress-Framework](https://github.com/webexpress-framework) ecosystem. Every module serves a clearly defined purpose and is deeply integrated into the overall architecture:
 
-- Knowledge Management: Enables structured creation, editing, and versioning of articles. Hierarchical organization, commenting, and granular permissions ensure clarity and control.
-- Process Management: Tasks, work packages, and issue reports can be captured, assigned, and tracked. Configurable workflows support diverse process models.
-- Asset Management: Digital content such as documents, images, videos, or code libraries is centrally stored, versioned, and categorized. A preview function simplifies review.
-- Customer Portal: External users can access shared content via a dedicated portal. Visibility is controlled with fine-grained permissions—secure and transparent.
+- **Knowledge Management:** Enables structured creation, editing, and versioning of articles. Hierarchical organization, commenting, and granular permissions ensure clarity and control.
+- **Process Management:** Tasks, work packages, and issue reports can be captured, assigned, and tracked. Configurable workflows support diverse process models.
+- **Asset Management:** Digital content such as documents, images, videos, or code libraries is centrally stored, versioned, and categorized. A preview function simplifies review.
+- **Customer Portal:** External users can access shared content via a dedicated portal. Visibility is controlled with fine-grained permissions—secure and transparent.
 
 ## Roadmap
 
@@ -51,6 +51,10 @@ The platform is composed of several core modules, each implemented as standalone
 | Mid-Term   | Audit, Migration, WQL+           | Compliance, integrations     | IT and governance departments
 | Long-Term  | AI, Real-time Collaboration, CRM | AI services, Realtime Editor | Strategic stakeholders and partners
 
+## No Commercial Interests
+
+**KleeneStar** pursues no commercial goals. There are no hidden license models, no paywalls, no profit motives. 
+All contributions are voluntary and unpaid. What we offer is a space for meaningful collaboration, professional learning, and long-term impact.
 
 ## Get Involved
 
@@ -61,18 +65,12 @@ What we offer is a space for meaningful contribution, professional growth, and r
 
 ### Roles and Tasks
 
-- **C# Backend Development:** Develop plugins, services, and interfaces based on the WebExpress framework → Focus: modularity, event system, API design
+- **C# Backend Development:** Develop plugins, services, and interfaces based on the [WebExpress-Framework](https://github.com/webexpress-framework) → Focus: modularity, event system, API design
 - **JavaScript/TypeScript Frontend Development:** Build accessible, responsive UI components with a focus on reusable controls and intuitive usability across device types 
 - **Testing:** Perform manual and automated tests, validate modules, workflows, and interfaces → Contribute to test concepts, bug reports, and regression testing
 - **Design:** Create and refine user interfaces, assets, icons, and diagrams → Support documentation aesthetics and presentation
 - **Community Management:** Build and maintain an active developer community, moderate discussions, organize feedback rounds → Maintain documentation, tutorials, and contribution guidelines: 
 - **Documentation & Architecture Support:** Contribute to architecture diagrams and technical explanations → Translate and refine technical texts, structure module documentation and API references
-
-## No Commercial Interests
-
-**KleeneStar** pursues no commercial goals. There are no hidden license models, no paywalls, no profit motives. 
-All contributions are voluntary and unpaid. What we offer is a space for meaningful collaboration, professional learning, and long-term impact.
-
 
 ## Why Contribute?
 

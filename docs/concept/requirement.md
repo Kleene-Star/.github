@@ -8,7 +8,7 @@ parent: "Concept"
 ---
 ## Abstract
 
-This document describes the concept for an extensible, web-based on-premises application that consolidates collaborative knowledge management, structured issue processing, and digital asset management into a unified platform. The application will be built on the `WebExpress` framework to ensure high modularity, scalability, and interoperability.
+This document describes the concept for an extensible, web-based on-premises application that consolidates collaborative knowledge management, structured issue processing, and digital asset management into a unified platform. The application will be built on the [WebExpress-Framework](https://github.com/webexpress-framework) to ensure high modularity, scalability, and interoperability.
 
 ## Initial Situation
 
@@ -33,7 +33,7 @@ The product is a web-based application built on the WebExpress framework that se
 
 ### Core functions and modules
 
-The platform consists of several core modules (services) that act as separate yet deeply integrated tools. Each module is implemented as a plugin within the `WebExpress` ecosystem.
+The platform consists of several core modules (services) that act as separate yet deeply integrated tools. Each module is implemented as a plugin within the **WebExpress** ecosystem.
 
 - Knowledge Management Module: This module enables collaborative creation, editing, and organization of knowledge articles in a hierarchical structure. It offers a rich-text editor, content versioning, commenting features, and fine-grained access control at the space and article level.
 - Issue Management Module: This module allows issues, work packages, bugs, or other items to be recorded, assigned, and tracked. Workflows are configurable to map different process models. Issues can be directly linked to knowledge articles and assets.
@@ -42,21 +42,21 @@ The platform consists of several core modules (services) that act as separate ye
 
 ### Technical characteristics
 
-- Unified search: A core component is the powerful, unified search function based on the `WebExpress` `IndexManager` and the query language WQL (WebExpress Query Language). Users can run complex, structured queries across all modules, for example, "find all open issues in project X that are linked to knowledge article Y and reference asset Z."
-- Plugin architecture: The entire application is built on ``WebExpress's` `PluginManager` and `PackageManager` model. Each service is a plugin, which simplifies maintenance, updates, and extension of the platform.
-- Identity and access management: The system uses `WebExpress's` `IdentityManager` and supports integration with existing directory services such as LDAP or Active Directory as well as central identity providers (IdPs) via protocols such as OpenID Connect or SAML, enabling integration with Keycloak, Google, Microsoft, or other services.
-- Interoperability: Communication and data exchange between modules take place via the defined APIs and the event system of the `WebExpress` framework. For example, the issue management module can trigger an event when a task is completed, to which the knowledge management module can respond by updating an article.
+- Unified search: A core component is the powerful, unified search function based on the **WebExpress** `IndexManager` and the query language WQL (WebExpress Query Language). Users can run complex, structured queries across all modules, for example, "find all open issues in project X that are linked to knowledge article Y and reference asset Z."
+- Plugin architecture: The entire application is built on **WebExpress's** `PluginManager` and `PackageManager` model. Each service is a plugin, which simplifies maintenance, updates, and extension of the platform.
+- Identity and access management: The system uses **WebExpress's** `IdentityManager` and supports integration with existing directory services such as LDAP or Active Directory as well as central identity providers (IdPs) via protocols such as OpenID Connect or SAML, enabling integration with Keycloak, Google, Microsoft, or other services.
+- Interoperability: Communication and data exchange between modules take place via the defined APIs and the event system of the **WebExpress-Framework**. For example, the issue management module can trigger an event when a task is completed, to which the knowledge management module can respond by updating an article.
 
 ## State of the Art and Positioning
 
-The market for collaboration and project management software offers a wide range of solutions that differ in their scope of functions, architecture, and licensing model. The application conceptualized here positions itself as a highly integrated open-source alternative that combines the strengths of established products and addresses their weaknesses through a thoughtful architecture based on the `WebExpress` framework.
+The market for collaboration and project management software offers a wide range of solutions that differ in their scope of functions, architecture, and licensing model. The application conceptualized here positions itself as a highly integrated open-source alternative that combines the strengths of established products and addresses their weaknesses through a thoughtful architecture based on the **WebExpress-Framework**.
 
 Commercial, proprietary solutions such as Confluence (for knowledge management) and Jira (for issue management) are market leaders and offer a very extensive range of functions. However, their greatest weakness is that they are two separate products whose integration is possible but license- and configuration-intensive. Data silos remain technically in place, making truly unified search and data consistency difficult. In addition, the on-premises versions are associated with high licensing costs, and customizability is limited to the APIs and add-on marketplaces provided by the vendor. The on-premises versions have been announced as end-of-life as of 2029-03-28.
 
 There are also strong competitors in the open-source space. XWiki is a powerful and extensible wiki platform whose strength lies primarily in knowledge management. Project management functions can be retrofitted via extensions but are not as deeply integrated into the core as in the present concept. OpenProject is a comprehensive project management solution with strong features for both classical and agile methods. However, the knowledge management component is less mature compared to specialized wiki systems. OpenDesk is a promising approach for a suite of open-source applications but focuses heavily on integrating various independent standard software (e.g., Nextcloud, OnlyOffice), which can again lead to a heterogeneous administrative and user landscape.
 
 This conceptualized application stands out from these solutions through several differentiators:
-1. Foundational architecture of unity: In contrast to the subsequent integration of separate systems (as with Jira/Confluence or OpenDesk), the solution described here is based on a common foundation-the `WebExpress` framework. All modules (knowledge, issues, assets) share the ComponentHub, IdentityManager, and IndexManager. This enables native and deep interoperability that goes beyond simple linking.
+1. Foundational architecture of unity: In contrast to the subsequent integration of separate systems (as with Jira/Confluence or OpenDesk), the solution described here is based on a common foundation-the **WebExpress-Framework**. All modules (knowledge, issues, assets) share the ComponentHub, IdentityManager, and IndexManager. This enables native and deep interoperability that goes beyond simple linking.
 2. Powerful, unified query language (WQL): While other systems often provide only simple full-text searches or specific filter dialogs, WQL offers a consistent and learnable language for users to execute complex, structured queries across all data objects. This is a decisive advantage over separate searches in different systems.
 3. Lightweight and high-performance plugin development: Because the entire framework is based on C#, developers can create performant and secure plugins using a unified set of tools and language skills, without having to deal with different technology stacks (e.g., Java, PHP, JavaScript frameworks).
 
@@ -76,10 +76,10 @@ The MIT license is a strong market driver. It allows organizations to use, custo
 Successful implementation of the project is subject to several technical and organizational constraints, which are largely defined by the choice of the WebExpress framework and the project goals.
 
 Technical constraints:
-1. `WebExpress` framework as the foundation: The entire application architecture must consistently align with the models of the `WebExpress` framework. This specifically concerns the implementation of core functions as plugins (`IPlugin`), the definition of applications (`IApplication`), and the use of central managers such as `PackageManager`, `ApplicationManager`, and `IdentityManager`. Development must be carried out in C#, ensuring a homogeneous technological basis.
+1. **WebExpress-Framework** as the foundation: The entire application architecture must consistently align with the models of the **WebExpress-Framework**. This specifically concerns the implementation of core functions as plugins (`IPlugin`), the definition of applications (`IApplication`), and the use of central managers such as `PackageManager`, `ApplicationManager`, and `IdentityManager`. Development must be carried out in C#, ensuring a homogeneous technological basis.
 2. Data modeling for the IndexManager: To realize the powerful, unified search via WQL, all central data objects (knowledge articles, issues, assets, comments, etc.) must implement the `IIndexItem` interface. The fields to be indexed must be carefully selected and, if necessary, annotated with attributes such as `[IndexIgnore]` to achieve an optimal balance between search depth and index size.
 3. Authentication and authorization: External identity services (LDAP/AD, IdPs) are centrally integrated via the `IdentityManager`. Access controls are consistently configured in classes (`IResource`, `IPage`, `IFragment`) via `[Authorization]` attributes. Roles and permissions must be defined uniformly across modules and consistently with the `IdentityManager`.
-4. Scalability for large data volumes: Although `WebExpress` is designed to be lightweight, the application must be designed for large data volumes and many users. This requires careful database planning (the framework itself is database-agnostic) and efficient use of caching mechanisms that `WebExpress` provides via the `[Cache]` attribute for resources and fragments. Asynchronous operations for long-running processes (e.g., indexing large data volumes) should be handled via the `WebExpress` `TaskManager` model.
+4. Scalability for large data volumes: Although **WebExpress-Framework** is designed to be lightweight, the application must be designed for large data volumes and many users. This requires careful database planning (the framework itself is database-agnostic) and efficient use of caching mechanisms that **WebExpress-Framework** provides via the `[Cache]` attribute for resources and fragments. Asynchronous operations for long-running processes (e.g., indexing large data volumes) should be handled via the **WebExpress-Framework** `TaskManager` model.
 
 Organizational constraints:
 1. Open-source development model: The project will be developed under the MIT license, which requires transparency and community involvement. All source code will be managed in a public Git repository. Contributions from external developers will be integrated via pull requests following a defined review process.
@@ -109,7 +109,7 @@ The roadmap outlines the planned development steps of the platform and serves as
 
 ## Conclusion and Outlook
 
-The concept describes a promising solution to the widespread problems of fragmented system landscapes in organizations. By consistently using the `WebExpress` framework as a unified technological foundation, a platform is created that combines the strengths of specialized tools for knowledge, project, and asset management in a single, highly integrated application. The differentiators-especially native modularity, the end-to-end WQL query language, and the modern, homogeneous technology base-strongly position the product against existing commercial and open-source solutions. The focus on on-premises operation and the permissive MIT license serve an important and growing market niche.
+The concept describes a promising solution to the widespread problems of fragmented system landscapes in organizations. By consistently using the **WebExpress-Framework** as a unified technological foundation, a platform is created that combines the strengths of specialized tools for knowledge, project, and asset management in a single, highly integrated application. The differentiators-especially native modularity, the end-to-end WQL query language, and the modern, homogeneous technology base-strongly position the product against existing commercial and open-source solutions. The focus on on-premises operation and the permissive MIT license serve an important and growing market niche.
 
 The realization of this project offers the opportunity to establish not just a product but an extensible ecosystem. The greatest challenge will be to attract an active developer community that advances the platform by creating new plugins and evolving the core.
 
