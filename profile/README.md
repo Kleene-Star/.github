@@ -1,8 +1,10 @@
+![KleeneStar](https://raw.githubusercontent.com/kleene-star/.github/main/docs/assets/img/banner.png)
+
 # KleeneStar - Modular Knowledge, Open Collaboration
 
 **KleeneStar** is a private, non-commercial open-source initiative for structured management of knowledge, processes, and digital assets.
 
-Built on the `WebExpress` framework, **KleeneStar** offers a plugin-based architecture that empowers organizations and individuals to create distributed, privacy-conscious applications with full control over infrastructure.
+Built on the [WebExpress-Framework](https://github.com/webexpress-framework), **KleeneStar** offers a plugin-based architecture that empowers organizations and individuals to create distributed, privacy-conscious applications with full control over infrastructure.
 
 ## What We Stand For
 

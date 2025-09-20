@@ -1,3 +1,5 @@
+![KleeneStar](https://raw.githubusercontent.com/kleene-star/.github/main/docs/assets/img/banner.png)
+
 # KleeneStar – Open-source platform for structured management of knowledge, processes, and digital assets
 
 **KleeneStar** is an open-source initiative for modular, web-based platforms designed to manage knowledge, processes, and digital assets in a structured way.
