@@ -17,6 +17,7 @@ This section outlines the architectural foundations and design principles behind
 ## Included Topics
 
 - [Requirements](requirement.md): Understand the functional and non-functional goals that shaped **KleeneStar’s** architecture and design decisions.
+- [Architecture Concept](architecture.md): Explore the core-plus-modules model that underpins **KleeneStar**.
 - [Core Data Model](cdm.md): Learn how entities, relationships, and metadata are structured to support knowledge, task, and asset management.
 
 ## Purpose
