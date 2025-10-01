@@ -37,7 +37,7 @@ We welcome contributions in the following areas:
 - All content, contributions, and modules are subject to the MIT License, unless otherwise stated.
 - The platform is designed for on-premises use and supports privacy-compliant integrations.
 - Responsible for legal content and technical platform: 
-  * Rene Schwarzer – Project Lead 
+  * Rene Schwarzer - Project Lead 
   * Contact: kleenestar.project@gmail.com
 
 Legal pages: [Legal Notice](./docs/legal-notice.md) & [Privacy Policy](./docs/privacy-policy.md)
