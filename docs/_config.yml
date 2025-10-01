@@ -5,7 +5,7 @@ plugins:
 
 title: KleeneStar
 description: Modular knowledge platform
-url: "https://kleene-star.github.io"
+url: "https://kleene-star.github.io/.github/"
 baseurl: ""
 
 minimal_mistakes_skin: "dark" # options: "default", "air", "neon", etc.
